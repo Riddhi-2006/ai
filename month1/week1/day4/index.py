@@ -6,6 +6,6 @@ import sys
 from modules import find_index,test
 courses = ['history','math','physics','compsci']
 index = find_index(courses,'math')
-# print(index)
-# print(test)
-print(sys.path)
+print(index)
+print(test)
+# print(sys.path)
