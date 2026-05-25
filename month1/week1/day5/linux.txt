@@ -1,0 +1,8 @@
+cat hello.py                 # view file contents
+cp hello.py hello2.py        # copy file
+mv hello2.py renamed.py      # rename file
+rm renamed.py                # delete file
+grep "print" hello.py        # search inside file
+grep -r "print" .            # search in all files
+head -5 hello.py             # first 5 lines
+tail -5 hello.py             # last 5 lines

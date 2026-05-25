@@ -1,0 +1,16 @@
+git clone <url> <where to clone>
+--> <where to clone> = . means to current directory
+--> viewing information about the remote repository
+git remote -v
+git branch -a
+--> shows changes done
+git diff
+--> then press q to exit git diff
+--> create a branch 
+git branch <branch name>
+--> to start working on other branch 
+git checkout <branch name>
+# create AND switch in one command
+git checkout -b feature2
+# go back to main
+git checkout main
