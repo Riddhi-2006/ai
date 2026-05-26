@@ -1,0 +1,16 @@
+# open a file in nano editor
+nano hello.py
+# see file permissions
+ls -la
+
+# change permissions
+chmod 755 hello.py
+
+# see current user
+whoami
+
+# see running processes
+ps
+
+# live process monitor
+top
