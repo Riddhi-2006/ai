@@ -47,3 +47,9 @@ print(Data.head(0))
 print(Data.head(1))
 print(Data.marks - means)
 print(Data.Name + '-' + Data.College)
+
+#grouping and sorting
+print(Data.groupby('College').Name.count())
+print(Data.groupby('College').marks.mean())
+print(Data.groupby('College').marks.min())
+print(Data.groupby('College').apply(lambda df : df.Name.iloc[0]))
