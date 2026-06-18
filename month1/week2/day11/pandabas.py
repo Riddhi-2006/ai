@@ -11,3 +11,12 @@ print(data.groupby('city').age.min())
 print(data.groupby('college').apply(lambda df : df['name'].iloc[0]))
 print(data.groupby(['city','age']).apply(lambda df : df.loc[df.college.idxmax()]))
 print(data.groupby('city').age.agg([max,min,len]))
+
+# multi indexes
+print(data.groupby(['college','city']).age.agg([len]))
+print(data.index)
+#sorting
+print(data.reset_index())
+print(data.sort_values(by = 'name',ascending = False))
+print(data.sort_index())
+print(data.sort_values(by = ['city','name','surname']))
