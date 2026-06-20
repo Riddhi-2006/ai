@@ -44,4 +44,8 @@ print(list(fifa_data.columns))
 # sns.jointplot(x=fifa_data['BRA'],y=fifa_data['ESP'],kind='kde')
 # sns.histplot(data=fifa_data,x='ESP',hue='ITA')
 sns.kdeplot(data = fifa_data,x='GER',hue='ARG',shade=True)
+# setting style
+sns.set_style('dark')
+sns.histplot(data=fifa_data)
 plt.show()
+
