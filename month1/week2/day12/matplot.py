@@ -33,5 +33,15 @@ print(list(fifa_data.columns))
 # sns.scatterplot(x=fifa_data['BRA'],y=fifa_data['ESP'],hue = fifa_data['ARG'])
 
 # sns.lmplot(x='ESP',y='BRA',hue='ITA',data=fifa_data)
-sns.swarmplot(x=fifa_data['BRA'],y=fifa_data['ESP'])
+# sns.swarmplot(x=fifa_data['BRA'],y=fifa_data['ESP'])
+
+#distributions
+# sns.histplot(data=fifa_data['BRA'])
+#kernel density estimate (KDE) 
+# sns.kdeplot(data=fifa_data['GER'],color='red',shade=True)
+
+# 2D KDE plot
+# sns.jointplot(x=fifa_data['BRA'],y=fifa_data['ESP'],kind='kde')
+# sns.histplot(data=fifa_data,x='ESP',hue='ITA')
+sns.kdeplot(data = fifa_data,x='GER',hue='ARG',shade=True)
 plt.show()
