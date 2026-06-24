@@ -26,7 +26,7 @@ def get_mae(max_leaf_nodes,train_X,train_y,val_X,val_y):
     mae = mean_absolute_error(val_y,pred)
     return(mae)
 
-candidate_max_leaf_node = [10,50,100,150,200,250,500,1000,2000,3000,4000,50000]
+candidate_max_leaf_node = [10,50,100,150,200,250,500,1000,2000,3000]
 scores = {}
 for max_leaf_nodes in candidate_max_leaf_node :
     my_mae = get_mae(max_leaf_nodes,train_X,train_y,val_X ,val_y)
